@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Instituto del Centro</title>
+<title>Catálogo de Cursos | Instituto del Centro</title>
 
 <style>
 
@@ -12,74 +12,74 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
 body{
-    font-family:Arial, sans-serif;
     background:#f4f6f8;
-    color:#222;
+    color:#333;
 }
 
 header{
-    background:#0a1e3f;
+    background:#0A2C5E;
     color:white;
     text-align:center;
-    padding:40px 20px;
+    padding:30px;
 }
 
 .logo{
-    width:180px;
-    max-width:100%;
+    width:150px;
     margin-bottom:15px;
 }
 
 header h1{
-    margin-bottom:10px;
+    font-size:32px;
 }
 
 header p{
-    font-size:18px;
-}
-
-.intro{
-    text-align:center;
-    padding:40px 20px;
+    margin-top:10px;
 }
 
 .formulario{
-    max-width:700px;
-    margin:auto;
-    padding:20px;
+    max-width:900px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
 }
 
-.formulario form{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
+.formulario h2{
+    text-align:center;
+    margin-bottom:20px;
 }
 
 .formulario input{
+    width:100%;
     padding:12px;
+    margin:10px 0;
     border:1px solid #ccc;
-    border-radius:8px;
+    border-radius:6px;
 }
 
-.catalogo{
+.cursos{
+    max-width:1200px;
+    margin:30px auto;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
-    padding:30px;
+    padding:20px;
 }
 
 .curso{
     background:white;
+    border-radius:10px;
     padding:20px;
-    border-radius:12px;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    box-shadow:0 0 10px rgba(0,0,0,.1);
 }
 
 .curso h3{
-    color:#0a1e3f;
+    color:#0A2C5E;
     margin-bottom:10px;
 }
 
@@ -91,22 +91,25 @@ header p{
     display:inline-block;
     background:#25D366;
     color:white;
-    padding:10px 20px;
-    border-radius:8px;
     text-decoration:none;
+    padding:12px 20px;
+    border-radius:6px;
     font-weight:bold;
 }
 
+.boton:hover{
+    background:#1ebc57;
+}
+
 footer{
-    background:#0a1e3f;
+    background:#0A2C5E;
     color:white;
     text-align:center;
     padding:20px;
-    margin-top:20px;
+    margin-top:30px;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -117,19 +120,9 @@ footer{
 
 <h1>Instituto del Centro</h1>
 
-<p>Catálogo de Cursos Online y Presenciales</p>
+<p>Catálogo de Cursos</p>
 
 </header>
-
-<section class="intro">
-
-<h2>Cursos Disponibles</h2>
-
-<p>
-En esta página podrá seleccionar entre los cursos más elegidos del Instituto del Centro.
-</p>
-
-</section>
 
 <section class="formulario">
 
@@ -137,55 +130,80 @@ En esta página podrá seleccionar entre los cursos más elegidos del Instituto 
 
 <form>
 
-<input type="text" placeholder="Apellido">
+<input type="text" placeholder="Apellido" required>
 
-<input type="text" placeholder="Nombre">
+<input type="text" placeholder="Nombre" required>
 
-<input type="tel" placeholder="Teléfono">
+<input type="tel" placeholder="Teléfono" required>
 
-<input type="email" placeholder="Correo Electrónico">
+<input type="email" placeholder="Correo Electrónico" required>
 
 </form>
 
 </section>
 
-<section class="catalogo">
+<section class="cursos">
 
 <div class="curso">
 <h3>Manipulación de Alimentos</h3>
-<p>Capacitación en higiene y seguridad alimentaria.</p>
-<a class="boton" href="#">Consultar</a>
+<p>Aprendé normas de higiene, seguridad alimentaria y buenas prácticas de manufactura.</p>
+
+<a class="boton"
+href="https://wa.me/5492284637002?text=Hola%20quiero%20informaci%C3%B3n%20del%20curso%20de%20Manipulaci%C3%B3n%20de%20Alimentos"
+target="_blank">
+Consultar por WhatsApp
+</a>
 </div>
 
 <div class="curso">
-<h3>Limpieza Institucional</h3>
-<p>Técnicas profesionales de limpieza y desinfección.</p>
-<a class="boton" href="#">Consultar</a>
+<h3>Organización y Planificación de Eventos</h3>
+<p>Capacitate para organizar eventos sociales, empresariales y culturales.</p>
+
+<a class="boton"
+href="https://wa.me/5492284637002?text=Hola%20quiero%20informaci%C3%B3n%20del%20curso%20de%20Organizaci%C3%B3n%20y%20Planificaci%C3%B3n%20de%20Eventos"
+target="_blank">
+Consultar por WhatsApp
+</a>
 </div>
 
 <div class="curso">
 <h3>Asistente Turístico</h3>
-<p>Atención al visitante y servicios turísticos.</p>
-<a class="boton" href="#">Consultar</a>
+<p>Formate para brindar asistencia y orientación a turistas en distintos ámbitos.</p>
+
+<a class="boton"
+href="https://wa.me/5492284637002?text=Hola%20quiero%20informaci%C3%B3n%20del%20curso%20de%20Asistente%20Tur%C3%ADstico"
+target="_blank">
+Consultar por WhatsApp
+</a>
 </div>
 
 <div class="curso">
-<h3>Gestoría del Automotor</h3>
-<p>Transferencias y trámites registrales.</p>
-<a class="boton" href="#">Consultar</a>
+<h3>Limpieza Institucional</h3>
+<p>Aprendé técnicas profesionales de limpieza, higiene y desinfección.</p>
+
+<a class="boton"
+href="https://wa.me/5492284637002?text=Hola%20quiero%20informaci%C3%B3n%20del%20curso%20de%20Limpieza%20Institucional"
+target="_blank">
+Consultar por WhatsApp
+</a>
 </div>
 
 <div class="curso">
 <h3>Auxiliar en Recursos Humanos</h3>
-<p>Administración y gestión de personal.</p>
-<a class="boton" href="#">Consultar</a>
+<p>Conocé los procesos básicos de administración y gestión del personal.</p>
+
+<a class="boton"
+href="https://wa.me/5492284637002?text=Hola%20quiero%20informaci%C3%B3n%20del%20curso%20de%20Auxiliar%20en%20Recursos%20Humanos"
+target="_blank">
+Consultar por WhatsApp
+</a>
 </div>
 
 </section>
 
 <footer>
 
-<p>© 2026 Instituto del Centro</p>
+<p>Instituto del Centro - Centro de Capacitaciones</p>
 
 </footer>
 
